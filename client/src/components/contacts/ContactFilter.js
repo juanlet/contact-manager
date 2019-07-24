@@ -8,8 +8,6 @@ const ContactFilter = () => {
    const {filterContacts, clearFilter, filtered} = contactContext;
    
    useEffect(() => {
-       console.log('running filter hook');
-       
        if(!filtered === null){
            text.current.value = '';
        }
