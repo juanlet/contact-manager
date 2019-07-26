@@ -7,10 +7,14 @@ const app = express();
 connectDB();
 
 //Init Middleware
-app.use(express.json({ extended: false }));
+app.use(express.json({
+    extended: false
+}));
 
-app.get('/', (req,res,next)=>{
-    res.json({ msg: 'Welcome to the contact'});
+app.get('/', (req, res, next) => {
+    res.json({
+        msg: 'Welcome to the contact'
+    });
 });
 
 // Define Routes
